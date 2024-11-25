@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPA - Empresa Fictícia</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/vue@3"></script>
+</head>
+<body>
+    <div id="app">
+        <!-- Cabeçalho -->
+        <header>
+            <h1>Empresa Fictícia</h1>
+            <nav>
+                <button @click="currentPage = 'home'">Home</button>
+                <button @click="currentPage = 'about'">Sobre</button>
+                <button @click="currentPage = 'contact'">Contato</button>
+            </nav>
+        </header>
+
+        <!-- Conteúdo Dinâmico -->
+        <main>
+            <component :is="currentPage"></component>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
