@@ -1,7 +1,7 @@
 // Componentes Vue.js
 const Home = {
     template: `
-        <section class="text-center" style="background-color: #ebeaff; padding: 80px 0">
+        <section class="text-center" style="padding: 80px 0">
             <h1 style="color: #3d3bf3">Bem-vindo à Balalaika Beans</h1>
             <p>O melhor café russo, direto para o seu paladar, mantendo a tradição desde 29 de dezembro de 1916.</p>
         </section>
@@ -10,7 +10,7 @@ const Home = {
             <h2 style="color: #9694ff">Sobre nós</h2>
             <p>Descubra mais sobre nossa história e o que faz nosso café especial.</p>
         </section>
-    `
+    `,
 };
 
 const About = {
@@ -26,9 +26,8 @@ const About = {
                 </p>
             </div>
         </div>
-    `
+    `,
 };
-
 
 const Contact = {
     template: `
@@ -52,22 +51,22 @@ const Contact = {
                 </form>
             </div>
         </section>
-    `
+    `,
 };
 
 // Instância do Vue
 const app = Vue.createApp({
     data() {
         return {
-            currentPage: 'home' // Página inicial
+            currentPage: "home", // Página inicial
         };
     },
     components: {
         home: Home,
         about: About,
-        contact: Contact
-    }
+        contact: Contact,
+    },
 });
 
 // Montar o Vue na Div #app
-app.mount('#app');
+app.mount("#app");
