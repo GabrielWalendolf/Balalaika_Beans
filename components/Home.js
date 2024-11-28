@@ -1,4 +1,4 @@
-/*
+
 const Home = {
     template: `
         <div class= "home-page">
@@ -14,4 +14,4 @@ const Home = {
         </div>
     `,
 }
-*/
+export default Home;
