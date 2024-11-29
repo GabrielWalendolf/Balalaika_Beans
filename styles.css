@@ -1,141 +1,160 @@
+/* Estilo geral para o body e html */
 body, html {
-    height: 100%;
-    margin: 0;
-    background-color: #202020;
-    font-family: Arial, sans-serif;
-    color: #C6DEFB;
+    height: 100%; /* Define altura de 100% para preencher a tela */
+    margin: 0; /* Remove margens padrão */
+    background-color: #202020; /* Define o fundo escuro da página */
+    font-family: Arial, sans-serif; /* Define a fonte padrão */
+    color: #C6DEFB; /* Define a cor do texto */
 }
 
+/* Estilo para o cabeçalho */
 header {
-    background: #333;
-    color: #fff;
-    padding: 1rem;
-    text-align: center;
+    background: #333; /* Cor de fundo escura para o cabeçalho */
+    color: #fff; /* Cor do texto branca */
+    padding: 1rem; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
 }
 
+/* Estilo para a navegação */
 nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.5rem;
+    display: flex; /* Usando flexbox para alinhar os itens */
+    flex-wrap: wrap; /* Permite quebra de linha nos itens */
+    justify-content: center; /* Centraliza os itens */
+    gap: 0.5rem; /* Espaçamento entre os itens */
 }
 
+/* Estilo para os botões na navegação */
 nav button {
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave para fundo e cor ao passar o mouse */
 }
 
+/* Estilo para o conteúdo principal */
 main {
-    padding: 2rem;
-    text-align: left;
-    max-width: 800px;
-    margin: 0 auto;
+    padding: 2rem; /* Espaçamento interno */
+    text-align: left; /* Alinha o texto à esquerda */
+    max-width: 800px; /* Limita a largura máxima */
+    margin: 0 auto; /* Centraliza o conteúdo */
 }
 
+/* Estilo para o cartão sobre */
 .about-card {
-    background-color: var(--background-color);
-    color: var(--text-color);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: left;
-    margin: 2rem auto;
-    max-width: 500px;
+    background-color: var(--background-color); /* Cor de fundo (variável) */
+    color: var(--text-color); /* Cor do texto (variável) */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    text-align: left; /* Alinha o texto à esquerda */
+    margin: 2rem auto; /* Espaçamento acima e abaixo do cartão */
+    max-width: 500px; /* Largura máxima do cartão */
 }
 
+/* Estilo para parágrafos dentro de containers de texto */
 .text-container p {
-    line-height: 1.6;
+    line-height: 1.6; /* Aumenta o espaçamento entre as linhas */
 }
 
+/* Estilo para h2 com classe text-center */
 h2.text-center {
-    color: #3d3bf3;
-    text-align: left;
-    margin-bottom: 20px;
+    color: #3d3bf3; /* Cor do texto azul */
+    text-align: left; /* Alinha o texto à esquerda */
+    margin-bottom: 20px; /* Espaço abaixo do título */
 }
 
+/* Estilo para a seção de contato */
 .contact-section {
-    background-color: var(--background-color);
-    color: var(--text-color);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: left;
-    margin: 2rem auto;
-    max-width: 500px;
+    background-color: var(--background-color); /* Cor de fundo (variável) */
+    color: var(--text-color); /* Cor do texto (variável) */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    text-align: left; /* Alinha o texto à esquerda */
+    margin: 2rem auto; /* Espaçamento acima e abaixo */
+    max-width: 500px; /* Largura máxima da seção */
 }
 
+/* Estilo para h2 dentro da seção de contato */
 .contact-section h2 {
-    color: #3d3bf3;
-    font-size: 2rem;
-    margin-bottom: 20px;
+    color: #3d3bf3; /* Cor do título azul */
+    font-size: 2rem; /* Tamanho maior do título */
+    margin-bottom: 20px; /* Espaço abaixo do título */
 }
 
+/* Estilo para formulários */
 form {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: var(--background-color);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex; /* Flexbox para organizar os itens */
+    flex-direction: column; /* Organiza os itens em coluna */
+    gap: 1.5rem; /* Espaçamento entre os itens */
+    max-width: 400px; /* Largura máxima do formulário */
+    margin: 0 auto; /* Centraliza o formulário */
+    padding: 20px; /* Espaçamento interno */
+    background-color: var(--background-color); /* Cor de fundo (variável) */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
 }
 
+/* Estilo para labels de formulários */
 .form-label {
-    display: block;
-    text-align: left;
-    font-size: 1rem;
-    color: var(--text-color);
+    display: block; /* Exibe o label como um bloco */
+    text-align: left; /* Alinha o texto à esquerda */
+    font-size: 1rem; /* Tamanho da fonte */
+    color: var(--text-color); /* Cor do texto (variável) */
 }
 
+/* Estilo para campos de formulário */
 .form-control {
-    width: 372px;
-    padding: 0.8rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
+    width: 372px; /* Largura dos campos */
+    padding: 0.8rem; /* Espaçamento interno */
+    border: 1px solid #ccc; /* Borda suave */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 1rem; /* Tamanho da fonte */
 }
 
+/* Estilo para áreas de texto */
 textarea.form-control {
-    resize: none;
+    resize: none; /* Impede o redimensionamento da área de texto */
 }
 
+/* Estilo para botões */
 .btn {
-    width: 400px;
-    padding: 0.8rem;
-    font-size: 1rem;
-    background-color: #3d3bf3;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    width: 400px; /* Largura do botão */
+    padding: 0.8rem; /* Espaçamento interno */
+    font-size: 1rem; /* Tamanho da fonte */
+    background-color: #3d3bf3; /* Cor de fundo azul */
+    color: #fff; /* Cor do texto branca */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Indica que é clicável */
 }
 
+/* Estilo para botões ao passar o mouse */
 .btn:hover {
-    background-color: #2c2ab5;
+    background-color: #2c2ab5; /* Cor de fundo alterada no hover */
 }
 
+/* Estilo para botões de navegação */
 .btn-nav {
-    padding: 0.8rem;
-    font-size: 1rem;
-    background-color: #3d3bf3;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    padding: 0.8rem; /* Espaçamento interno */
+    font-size: 1rem; /* Tamanho da fonte */
+    background-color: #3d3bf3; /* Cor de fundo azul */
+    color: #fff; /* Cor do texto branca */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Indica que é clicável */
 }
 
+/* Estilo para botões de navegação ao passar o mouse */
 .btn-nav:hover {
-    background-color: #2c2ab5;
+    background-color: #2c2ab5; /* Cor de fundo alterada no hover */
 }
 
+/* Estilo para a página inicial */
 .home-page {
-    background-color: var(--background-color);
-    color: var(--text-color);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    margin: 2rem auto;
-    max-width: 500px;
+    background-color: var(--background-color); /* Cor de fundo (variável) */
+    color: var(--text-color); /* Cor do texto (variável) */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    text-align: center; /* Centraliza o texto */
+    margin: 2rem auto; /* Espaçamento acima e abaixo */
+    max-width: 500px; /* Largura máxima da página inicial */
 }
