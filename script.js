@@ -1,5 +1,6 @@
 // script.js
 import Home from './components/Home.js';
+import Coffees from './components/Coffees.js';
 import About from './components/About.js';
 import Contact from './components/Contact.js';
 
@@ -12,6 +13,7 @@ const app = Vue.createApp({
     },
     components: {
         home: Home,
+        coffees: Coffees,
         about: About,
         contact: Contact,
     },

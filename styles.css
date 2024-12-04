@@ -1,18 +1,24 @@
-/* Estilo geral para o body e html */
-body, html {
-    height: 100%; /* Define altura de 100% para preencher a tela */
-    margin: 0; /* Remove margens padrão */
-    background-color: #202020; /* Define o fundo escuro da página */
-    font-family: Arial, sans-serif; /* Define a fonte padrão */
-    color: #C6DEFB; /* Define a cor do texto */
+/* colors */
+/*#232c80
+/*#e5e5e5
+/*#c70016
+/*#fdde00
+
+/* Estilo geral para o body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
 }
 
 /* Estilo para o cabeçalho */
 header {
-    background: #333; /* Cor de fundo escura para o cabeçalho */
-    color: #fff; /* Cor do texto branca */
-    padding: 1rem; /* Espaçamento interno */
-    text-align: center; /* Centraliza o texto */
+    background-color: #232c80;
+    color: white;
+    padding: 1rem;
+    text-align: center;
 }
 
 /* Estilo para a navegação */
@@ -27,6 +33,21 @@ nav {
 nav button {
     transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave para fundo e cor ao passar o mouse */
 }
+/* Estilo para botões de navegação */
+.btn-nav {
+    padding: 0.8rem; /* Espaçamento interno */
+    font-size: 1rem; /* Tamanho da fonte */
+    background-color: #cebc35; /* Cor de fundo azul */
+    color: #fff; /* Cor do texto branca */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Indica que é clicável */
+}
+
+/* Estilo para botões de navegação ao passar o mouse */
+.btn-nav:hover {
+    background-color: #796f2a; /* Cor de fundo alterada no hover */
+}
 
 /* Estilo para o conteúdo principal */
 main {
@@ -34,6 +55,50 @@ main {
     text-align: left; /* Alinha o texto à esquerda */
     max-width: 800px; /* Limita a largura máxima */
     margin: 0 auto; /* Centraliza o conteúdo */
+}
+
+/* Estilo para a página inicial */
+.home-page {
+    background-color: var(--background-color); /* Cor de fundo (variável) */
+    color: var(--text-color); /* Cor do texto (variável) */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    text-align: center; /* Centraliza o texto */
+    margin: 2rem auto; /* Espaçamento acima e abaixo */
+    max-width: 500px; /* Largura máxima da página inicial */
+}
+
+.coffees {
+    background-color: #232c80;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 10px; /* Borda arredondada */
+}
+
+.menu-item {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.menu-image {
+    position: absolute;
+    top: -100px;
+    right: 0;
+    width: 100px;
+    height: auto;
+    display: none;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.menu-item:hover .menu-image {
+    display: block;
 }
 
 /* Estilo para o cartão sobre */
@@ -55,7 +120,7 @@ main {
 
 /* Estilo para h2 com classe text-center */
 h2.text-center {
-    color: #3d3bf3; /* Cor do texto azul */
+    color: #232c80; /* Cor do texto azul */
     text-align: left; /* Alinha o texto à esquerda */
     margin-bottom: 20px; /* Espaço abaixo do título */
 }
@@ -74,7 +139,7 @@ h2.text-center {
 
 /* Estilo para h2 dentro da seção de contato */
 .contact-section h2 {
-    color: #3d3bf3; /* Cor do título azul */
+    color: #232c80; /* Cor do título azul */
     font-size: 2rem; /* Tamanho maior do título */
     margin-bottom: 20px; /* Espaço abaixo do título */
 }
@@ -119,7 +184,7 @@ textarea.form-control {
     width: 400px; /* Largura do botão */
     padding: 0.8rem; /* Espaçamento interno */
     font-size: 1rem; /* Tamanho da fonte */
-    background-color: #3d3bf3; /* Cor de fundo azul */
+    background-color: #cebc35; /* Cor de fundo azul */
     color: #fff; /* Cor do texto branca */
     border: none; /* Remove a borda padrão */
     border-radius: 5px; /* Bordas arredondadas */
@@ -128,33 +193,15 @@ textarea.form-control {
 
 /* Estilo para botões ao passar o mouse */
 .btn:hover {
-    background-color: #2c2ab5; /* Cor de fundo alterada no hover */
+    background-color: #796f2a; /* Cor de fundo alterada no hover */
 }
 
-/* Estilo para botões de navegação */
-.btn-nav {
-    padding: 0.8rem; /* Espaçamento interno */
-    font-size: 1rem; /* Tamanho da fonte */
-    background-color: #3d3bf3; /* Cor de fundo azul */
-    color: #fff; /* Cor do texto branca */
-    border: none; /* Remove a borda padrão */
-    border-radius: 5px; /* Bordas arredondadas */
-    cursor: pointer; /* Indica que é clicável */
-}
-
-/* Estilo para botões de navegação ao passar o mouse */
-.btn-nav:hover {
-    background-color: #2c2ab5; /* Cor de fundo alterada no hover */
-}
-
-/* Estilo para a página inicial */
-.home-page {
-    background-color: var(--background-color); /* Cor de fundo (variável) */
-    color: var(--text-color); /* Cor do texto (variável) */
-    padding: 20px; /* Espaçamento interno */
-    border-radius: 10px; /* Bordas arredondadas */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
-    text-align: center; /* Centraliza o texto */
-    margin: 2rem auto; /* Espaçamento acima e abaixo */
-    max-width: 500px; /* Largura máxima da página inicial */
+footer {
+    background-color: #c70016;
+    color: white;
+    text-align: center;
+    padding: 0.3rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
