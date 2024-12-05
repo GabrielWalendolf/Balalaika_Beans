@@ -46,13 +46,13 @@ const Coffees = {
                 { name: "Medina's Ice", price: "R$ 9,00", image: "/Images/Medina's Ice.webp" },
                 { name: "Medina's Coffee (Limited)", price: "R$ 8,50", image: "/Images/Medina's Coffee (Limited).webp" },
                 { name: "Medina's Latte (Limited)", price: "R$ 9,00", image: "/Images/Medina's Latte (Limited).webp" },
-                { name: "Ultra Coffee", price: "R$ 12,00", image: "path/to/ultra.jpg" },
+                { name: "Ultra Coffee", price: "R$ 12,00", image: "/Images/Ultra Coffee.webp" },
             ],
             sides: [
-                { name: "Pão de Queijo", price: "R$ 4,00", image: "path/to/pao.jpg" },
-                { name: "Biscoito", price: "R$ 3,50", image: "path/to/biscoito.jpg" },
-                { name: "Croissant", price: "R$ 6,00", image: "path/to/croissant.jpg" },
-                { name: "Bolo de Cenoura", price: "R$ 8,00", image: "path/to/bolo.jpg" },
+                { name: "Pão de Queijo", price: "R$ 4,00", image: "/Images/Pão de Queijo.webp" },
+                { name: "Biscoito", price: "R$ 3,50", image: "/Images/Biscoito.webp" },
+                { name: "Croissant", price: "R$ 6,00", image: "/Images/Croissant.webp" },
+                { name: "Bolo de Cenoura", price: "R$ 8,00", image: "/Images/Bolo de Cenoura.webp" },
             ],
         };
     },
