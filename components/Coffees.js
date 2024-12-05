@@ -38,14 +38,14 @@ const Coffees = {
         return {
             balalaikas: [
                 { name: "Balalaika's Classic", price: "R$ 5,00", image: "/Images/Balalaika's Classic.webp" },
-                { name: "Balalaika's Express", price: "R$ 8,00", image: "path/to/express.jpg" },
+                { name: "Balalaika's Express", price: "R$ 8,00", image: "/Images/Balalaika's Express.webp" },
                 { name: "Rasputin's Latte", price: "R$ 7,50", image: "/Images/Rasputin's Latte.webp" },
                 { name: "Rasputin's Balalaika Beans Prototype_001", price: "R$ 15,00", image: "/Images/Rasputin's Balalaika Beans Prototype_001.png" },
             ],
             extras: [
                 { name: "Medina's Ice", price: "R$ 9,00", image: "/Images/Medina's Ice.webp" },
-                { name: "Medina's Coffee (Limited)", price: "R$ 8,50", image: "path/to/coffee.jpg" },
-                { name: "Medina's Latte (Limited)", price: "R$ 9,00", image: "path/to/latte.jpg" },
+                { name: "Medina's Coffee (Limited)", price: "R$ 8,50", image: "/Images/Medina's Coffee (Limited).webp" },
+                { name: "Medina's Latte (Limited)", price: "R$ 9,00", image: "/Images/Medina's Latte (Limited).webp" },
                 { name: "Ultra Coffee", price: "R$ 12,00", image: "path/to/ultra.jpg" },
             ],
             sides: [

@@ -119,7 +119,7 @@ main {
 }
 
 /* Estilo para h2 com classe text-center */
-h2.text-center {
+h3, h2.text-center {
     color: #232c80; /* Cor do texto azul */
     text-align: left; /* Alinha o texto à esquerda */
     margin-bottom: 20px; /* Espaço abaixo do título */
@@ -164,14 +164,15 @@ form {
     font-size: 1rem; /* Tamanho da fonte */
     color: var(--text-color); /* Cor do texto (variável) */
 }
-
 /* Estilo para campos de formulário */
 .form-control {
-    width: 372px; /* Largura dos campos */
+    width: 100%; /* Torna o campo flexível */
+    max-width: 372px; /* Define a largura máxima */
     padding: 0.8rem; /* Espaçamento interno */
     border: 1px solid #ccc; /* Borda suave */
     border-radius: 5px; /* Bordas arredondadas */
     font-size: 1rem; /* Tamanho da fonte */
+    box-sizing: border-box; /* Inclui padding e borda no cálculo da largura */
 }
 
 /* Estilo para áreas de texto */
