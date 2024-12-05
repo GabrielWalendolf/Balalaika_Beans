@@ -14,20 +14,20 @@ const Contact = {
                 <h2>Entre em Contato</h2>
                 <form @submit.prevent="submitForm">
                     <div class="mb-3">
-                        <label for="name" class="form-label">Nome</label>
-                        <input type="text" class="form-control" id="name" v-model="name" placeholder="Seu nome" />
+                        <label for="name" class="form-label">Nome Russo</label>
+                        <input type="text" class="form-control" id="name" v-model="name" placeholder="Seu nome russo" />
                     </div>
                     <div class="mb-3">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="email" v-model="email" placeholder="Seu email" />
+                        <label for="email" class="form-label">Email Russo</label>
+                        <input type="email" class="form-control" id="email" v-model="email" placeholder="Seu email russo" />
                     </div>
                     <div class="mb-3">
                         <label for="opiniao" class="form-label">Qual a sua opinião sobre Grigori Rasputin?</label>
-                        <input type="text" class="form-control" id="opiniao" v-model="opiniao" placeholder="Sua opinião" />
+                        <input type="text" class="form-control" id="opiniao" v-model="opiniao" placeholder="Sua opinião russa" />
                     </div>
                     <div class="mb-3">
-                        <label for="message" class="form-label">Mensagem</label>
-                        <textarea class="form-control" id="message" v-model="message" rows="3" placeholder="Sua mensagem"></textarea>
+                        <label for="message" class="form-label">Mensagem Russa</label>
+                        <textarea class="form-control" id="message" v-model="message" rows="3" placeholder="Sua mensagem russa"></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">Enviar</button>
                 </form>
